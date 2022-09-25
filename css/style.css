@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. HEADER */
+
+header nav{
+    background-color: #353A40;
+    font-size: 1.2rem;
+}
+
+
+.logo a h1{
+display: flex;
+align-items: center;
+margin-left: 10%;
+font-size: 1.5rem;
+}
+
+.logo h1 img{
+    width:25%
+}
+
+.logo h1{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+a.nav-link{
+    color: #939EA8;
+}
+
+a.nav-link.activo {
+    color: #FFF; 
+}
+
+a.nav-link.comprar{
+    color: #27A846;
+}
+
+.navbar-collapse{
+    width: 100%;
+}
+
+
+/* 2. MAIN */
+
+/* 2.A CAROUSEL */
+
+.carousel-inner{
+    height: 100vh;
+}
+
+.carouselTexto{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    color: #FFF;
+    width: 40%;
+    font-size: 1.49rem;
+    text-align: right;
+}
+
+.carouselTexto h2{
+    font-size: 2.5rem;
+}
+
+/* 2.B CARDS */
+
+.tituloCardGroup{
+text-align: center;
+margin: 1rem 0 1rem;
+}
+
+p.encabezado{
+    height: 0.1rem;
+    font-size: 1rem;
+}
+
+p.oradores{
+    height: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.card-group{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin: 0 1.2rem 0;
+}
+
+.card h5{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+
+.card p{
+    font-size: 1.1rem;
+}
+
+span.tag{
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    padding: 0.1rem 0.25rem;
+    margin-right: 0.1rem;
+}
+
+span.javascript{
+    background-color: #FEBD00;
+}
+
+span.react{
+    background-color:#17A2B7;
+    color: #FFF;
+}
+
+span.negocios{
+    background-color: #6B757C;
+    color: #FFF;
+}
+
+span.startups{
+    background-color: #DC3546;
+    color: #FFF;
+}
+
+/* Card con imagen */
+
+.cardConImagen{
+    margin: 1.5rem 0rem;
+}
+
+.cardDerecha{
+    color: #FFF;
+    background-color: #353A40;
+}
+
+
+/* Formulario */
+
+.contenedorFormulario{
+    width: 50%;
+}
+
+.anotate{
+    margin-top: 2rem;
+}
+
+
+.btn.form-control{
+    background-color: #96C93E;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    color: #FFF;
+    margin-bottom: 2rem;
+}
+
+
+/* Footer */
+
+footer{
+    background: linear-gradient(to bottom, #f6f6f6 0%,#708087 1%,#112c39 2%,#1c3541 3%,#1c3542 99%,#1c353f 100%);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.footerItem{
+    color: #FFF;
+}
