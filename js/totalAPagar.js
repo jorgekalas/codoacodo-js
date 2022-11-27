@@ -65,7 +65,7 @@ formComprarTickets.addEventListener('submit', e =>{
     
     spanTotalAPagar.innerText = totalAPagar;
     
-    lanzarMensajeExitoso()
+    totalAPagar!=0? lanzarMensajeExitoso() : false;
 
     return totalAPagar;
 
