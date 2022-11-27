@@ -7,6 +7,30 @@ let formComprarTickets = document.querySelector('.form-comprar-tickets')
 let spanTotalAPagar = document.querySelector('.span-total-a-pagar')
 let botonBorrar = document.querySelector('.boton-borrar')
 
+
+function lanzarMensajeExitoso(){
+
+    Swal.fire({
+        title: '¿Deseas reservar estos tickets?',
+        text: "El valor total de la reserva será de $" + totalAPagar,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#28a745',
+        cancelButtonColor: '#dc3545',
+        confirmButtonText: 'Sí, confirmar reserva',
+        cancelButtonText: 'Cancelar',
+    }).then((result) => {
+        if (result.isConfirmed) {
+        Swal.fire(
+            '¡Reserva confirmada con éxito!',
+            'A la brevedad recibirás un email con el detalle de tu reserva'
+        )
+        }
+    })
+
+}
+
+
 formComprarTickets.addEventListener('submit', e =>{
     e.preventDefault();
     console.log(e)
@@ -40,6 +64,9 @@ formComprarTickets.addEventListener('submit', e =>{
     console.log(totalAPagar);
     
     spanTotalAPagar.innerText = totalAPagar;
+    
+    lanzarMensajeExitoso()
+
     return totalAPagar;
 
 })
@@ -48,5 +75,6 @@ botonBorrar.addEventListener("click", () =>{
     totalAPagar = "";
     spanTotalAPagar.innerText = totalAPagar;
 })
+
 
 }

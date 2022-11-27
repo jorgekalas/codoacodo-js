@@ -77,6 +77,7 @@ let template = `
 
 comprarTicketsMenu.addEventListener("click", () => {
     sectionComprarTickets.innerHTML = template;
+    calcularTotalAPagar() 
 })
 
 comprarTicketsBoton.addEventListener("click", () => {

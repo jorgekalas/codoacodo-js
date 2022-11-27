@@ -1,6 +1,4 @@
-
 function validarCampos() {
-
 let inputNombre = document.querySelector(".input-nombre");
 console.log(inputNombre);
 let nombre = inputNombre.value;
@@ -66,12 +64,9 @@ function validarCantidad(){
     }
 }
 
-
 //Llamado a las funciones
     validarNombre();
     validarApellido();
     validarCorreo();
     validarCantidad();
-
-
 }
